@@ -19,3 +19,27 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+
+/**
+ * Workaround for libraries that still call jcenter().
+ * This adds a jcenter() method to repository handlers that simply uses mavenCentral().
+ */
+def addJCenterShim(handler) {
+    handler.ext.jcenter = {
+        handler.mavenCentral()
+    }
+}
+
+allprojects {
+    addJCenterShim(repositories)
+    buildscript {
+        addJCenterShim(repositories)
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
