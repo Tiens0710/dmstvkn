@@ -42,6 +42,11 @@ FinWise tích hợp trí tuệ nhân tạo (AI) xuyên suốt ứng dụng, giú
 | **Dự báo Burn Rate** | Dự đoán chi tiêu đến cuối tháng dựa trên tốc độ chi hiện tại, gợi ý mức chi hàng ngày/tuần | Màn hình Ngân sách |
 | **Dự báo tài chính AI** | Phân tích xu hướng thu chi, đưa ra nhận xét và gợi ý cải thiện | Màn hình Báo cáo |
 | **Hỏi AI về tài chính** | Hỏi bất kỳ câu hỏi nào → AI trả lời dựa trên dữ liệu thực từ database | Màn hình Ghi giao dịch |
+| 🔍 **AI Lùng sục Đăng ký ngầm** | Tự động quét và phát hiện các dịch vụ trừ tiền định kỳ (Netflix, Spotify...) | Màn hình Tổng quan (Dashboard) |
+| 🤖 **AI "Soi" Chi tiêu** | Nhận xét vui nhộn, xéo xắt hoặc khen ngợi tình hình thu chi tháng | Màn hình Báo cáo |
+| 📊 **AI Khám Sức khỏe Kinh doanh** | Phân tích Khung giờ vàng và hành vi khách hàng để tối ưu doanh thu (*) | Màn hình Báo cáo |
+
+> (*) *Tính năng độc quyền dành cho gói Doanh nghiệp SME*
 
 ### Lập kế hoạch thông minh
 
@@ -131,10 +136,10 @@ Thẻ tổng quan nổi ở đầu trang hiển thị:
 | 🔵 **Ngân sách** | Quản lý ngân sách | Màn hình Ngân sách |
 | 🟠 **Báo cáo** | Xem báo cáo phân tích | Màn hình Báo cáo |
 
-### 2.5 Cảnh báo ngân sách
+### 2.5 Cảnh báo thông minh
 
-- Hiển thị số danh mục đã **vượt ngân sách** tháng này
-- Badge đỏ nhấp nháy để thu hút sự chú ý
+- **Cảnh báo ngân sách**: Hiển thị số danh mục đã **vượt ngân sách** tháng này với badge đỏ nhấp nháy.
+- 🔍 **AI Cảnh báo Đăng ký ngầm**: Nếu AI phát hiện bạn có dịch vụ trả phí định kỳ (như Netflix, Spotify), một thông báo màu vàng sẽ mở ra khuyên bạn cân nhắc cắt bỏ nếu ít dùng.
 
 ### 2.6 Công cụ nhanh (Grid 5 nút)
 
@@ -454,16 +459,31 @@ Nhấn tab **"Báo cáo"** ở thanh điều hướng dưới, hoặc nút **"B�
 - Hiển thị **top 5** danh mục chi tiêu nhiều nhất
 - Phần trăm cho mỗi danh mục
 
-### 8.5 Dự báo AI
+### 8.5 Cố vấn AI (Forecast)
 
-1. Nhấn nút **"Tạo dự báo"** trong thẻ "Dự báo AI"
+1. Nhấn nút **"Phân tích"** trong thẻ "Cố vấn AI"
 2. AI phân tích toàn bộ lịch sử giao dịch
 3. Đưa ra nhận xét về:
    - Xu hướng chi tiêu
    - Dự báo chi tiêu cuối tháng
    - Gợi ý cải thiện tài chính
 
-### 8.6 Giao dịch gần đây
+### 8.6 AI "Soi" Chi Tiêu (Dành cho Gen Z)
+
+1. Nhấn nút **"Nhận xét"** ở phần thẻ màu cam
+2. AI "Roaster" sẽ đọc thu chi tháng này của bạn và thả một câu đùa cực mặn.
+3. Nếu tiêu lố, chuẩn bị tinh thần bị "chê"! Nếu tiết kiệm tốt, bạn sẽ nhận được lời khen ngút trời.
+
+### 8.7 Sức Khoẻ Kinh Doanh (**Gói SME**)
+
+Tính năng phân tích cao cấp cho chủ shop/doanh nghiệp, giúp tối ưu hóa doanh thu.
+1. Nhấn nút **"Phân tích"** ở phần thẻ xanh lá
+2. AI phân tích và đưa ra:
+   - *Ngày/Giờ Vàng:* Khoảng thời gian khách hàng thanh toán nhiều nhất.
+   - *Cảnh báo Dòng tiền:* Phát hiện lúc chi phí đầu vào tăng vọt.
+   - *Lời khuyên Bán hàng:* Gợi ý tung khuyến mãi hoặc quảng cáo để chốt đơn.
+
+### 8.8 Giao dịch gần đây
 
 - Hiển thị **5 giao dịch mới nhất**
 - Nhấn **"Xem tất cả →"** để chuyển sang màn hình Giao dịch đầy đủ
